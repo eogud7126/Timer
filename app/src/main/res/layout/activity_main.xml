@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:text="@string/zero"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="100sp"
+            android:textSize="80sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.225"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -36,12 +36,12 @@
             android:layout_height="120dp"
             android:text="@string/dotdot"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="100sp"
+            android:textSize="80sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/secTv"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:text="@string/zero"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="100sp"
+            android:textSize="80sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.225"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -63,7 +63,7 @@
             android:layout_height="120dp"
             android:text="@string/dotdot"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="100sp"
+            android:textSize="80sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:text="@string/zero"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="100sp"
+            android:textSize="80sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.728"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -103,13 +103,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:focusable="true"
             android:tint="@android:color/white"
             app:backgroundTint="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@android:drawable/ic_media_play"
-            android:focusable="true" />
+            app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/refreshFAB"
@@ -120,7 +120,7 @@
             app:backgroundTint="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@android:drawable/picture_frame"
+            app:srcCompat="@drawable/ic_stop_black_24dp"
             android:focusable="true" />
 
         <Button
