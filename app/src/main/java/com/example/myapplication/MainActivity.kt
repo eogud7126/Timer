@@ -41,13 +41,13 @@ class MainActivity : AppCompatActivity() {
         playFAB.setImageResource(R.drawable.ic_pause_black_24dp)
         timerTask  = timer(period = 10){
             time++
-            val min = time / 1000 / 60
-            val sec = time % 60/ 100
-            val milli = time % 60 % 100
+            val min = time / 100 / 60
+            val sec = time / 100 % 60
+            val milli = time % 100
             runOnUiThread{
-                minTv.text = "$min"
-                secTv.text = "$sec"
-                millTv.text = "$milli"
+                minTv.text = String.format("%02d",min)
+                secTv.text = String.format("%02d",sec)
+                millTv.text = String.format("%02d",milli)
             }
         }
     }
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     private fun recordLap(){
         val lapTime = this.time
         val lapTv = TextView(this)
-        lapTv.text = "$lap LAB  : ${lapTime/60/100}.${lapTime%60/100}.${lapTime%100}"
+        lapTv.text = "$lap LAB  : ${lapTime/60/100}.${lapTime/100%60}.${lapTime%100}"
 
         lapLayout.addView(lapTv,0)
         lap++
